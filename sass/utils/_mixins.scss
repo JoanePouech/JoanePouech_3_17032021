@@ -17,6 +17,9 @@
     justify-content: center;
     align-items: center;
     align-content: space-around;
-    text-align: center;
-    
+    text-align: center;    
+}
+
+@mixin shadow {
+    box-shadow: 0 0.2rem 0.3rem darken($color-mediumBack, 10%);
 }
