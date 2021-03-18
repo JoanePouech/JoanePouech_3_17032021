@@ -1,0 +1,22 @@
+@mixin mainMargin {
+    margin: 0 1rem;
+}
+
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    text-align: center;
+    
+}

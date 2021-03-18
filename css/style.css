@@ -2,7 +2,7 @@ html {
   font-size: 20px;
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,19 +10,19 @@ body {
 
 h1 {
   font-family: "Shrikhand";
-  font-size: 3rem;
+  font-size: 1.6rem;
 }
 
 h2 {
   font-family: "Roboto";
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 h3 {
   font-family: "Roboto";
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
 }
 
 h4 {
@@ -32,8 +32,64 @@ h4 {
 
 p {
   font-family: "Roboto";
-  font-weight: 300;
-  font-size: 1.2rem;
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+
+i {
+  padding: 0 0.5rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  padding-top: 1rem;
+}
+
+.presentationSection__searchBlock {
+  width: 100vw;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  background-color: #eaeaea;
+  box-shadow: inset -0.1rem 0.1rem 0.2rem #b7b7b7;
+}
+.presentationSection__descriptionBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+.presentationSection__descriptionBlock h2 {
+  margin: 0 1rem;
+  padding: 2rem 2rem 0 2rem;
+}
+.presentationSection__descriptionBlock p {
+  margin: 0 1rem;
+  padding-top: 1rem;
+}
+.presentationSection__descriptionBlock h3 {
+  width: 11rem;
+  height: 2.5rem;
+  margin: 1.5rem 0 2rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  color: white;
+  background: linear-gradient(to left top, #9356DC, 60%, #FF79DA);
+  border-radius: 2rem;
+  box-shadow: 0 0.3rem 0.2rem #d1d1d1;
 }
 
 /*# sourceMappingURL=style.css.map */
