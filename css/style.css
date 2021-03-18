@@ -1,0 +1,39 @@
+html {
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Shrikhand";
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-family: "Shrikhand";
+  font-size: 1.2rem;
+}
+
+p {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
