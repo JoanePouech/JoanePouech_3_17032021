@@ -1,0 +1,9 @@
+.button {
+    width: 11rem;
+    height: 2.5rem;
+    margin: 1.5rem 0 2rem 0;
+    @include flexRow;
+    background: linear-gradient(to left top, $color-primary, 60%, $color-secondary);
+    border-radius: 2rem;
+    @include shadow;
+}

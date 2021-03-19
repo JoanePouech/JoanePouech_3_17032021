@@ -1,5 +1,13 @@
 @import "./utils/variables.scss";
 @import "./utils/mixins.scss";
+
 @import "./base/base.scss";
 @import "./base/typography.scss";
-@import "./layout/homePage.scss";
+
+@import "./components/button.scss";
+
+@import "./layout/headers.scss";
+@import "./layout/homePage-1presentationSection.scss";
+@import "./layout/homePage-2guidelineSection.scss";
+@import "./layout/homePage-3restaurantSection.scss";
+@import "./layout/footer.scss";
