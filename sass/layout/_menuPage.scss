@@ -1,0 +1,66 @@
+.menuSection {
+    margin-bottom: -60px;
+
+    &__image {
+        width: 100vw;
+    }
+
+    &__menu {
+        width: 100vw;
+        padding-bottom: 1rem;
+        background-color: $color-lightBack;
+        border-radius: 2rem 2rem 0 0;
+        position: relative;
+        top: -60px;
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+            @include mainMargin;
+            padding-top: 1rem;            
+
+            & h5 {
+                color: black; 
+                font-size: 1.2rem;
+            }            
+        }
+
+        &__dishes {
+            @include mainMargin;
+            margin-top: 1.5rem;
+
+            & > p {
+                font-size: 0.8rem;
+                margin-bottom: 0.3rem;
+            }
+
+            & > hr {
+                width: 2rem;
+                height: 0.2rem;
+                margin-bottom: 1rem;
+                background-color: $color-tertiary;
+                border: none;
+            }
+
+            &__name {
+                width: 85%;
+                
+                & > h3 {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                & > p {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+
+            &__price {
+                font-size: 0.7rem;
+                align-self: flex-end;
+            }
+        }
+    }
+}

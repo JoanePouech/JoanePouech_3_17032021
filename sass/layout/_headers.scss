@@ -1,7 +1,11 @@
-// HomePage header
-header {
+.header {
     @include flexRow;
     padding-top: 1rem;
+
+    &__return {
+        color: black;
+        position: absolute;
+        left: 5vw;
+    }
 }
 
-// Menus header

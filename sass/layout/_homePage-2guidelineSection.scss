@@ -12,10 +12,10 @@
 
         &__card {
             width: 95%;
-            margin-bottom: 1rem;    
-            background-color: $color-lightBack;
+            margin-bottom: 1rem;  
             border-radius: 1rem;
             @include shadow;
+            background-color: $color-lightBack;
 
             &__number {
                 width: 1.1rem;
@@ -60,10 +60,11 @@
                     color: $color-primary;
                 }
             }
-
+            
             &:hover {
                 background-color: lighten($color-primary, 35%);
             }
+
         }
     }
 }

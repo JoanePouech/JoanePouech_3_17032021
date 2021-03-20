@@ -10,6 +10,10 @@
         @include mainMargin;
         padding-bottom: 2rem;
 
+        & a {
+            text-decoration: none;
+        }
+
         &__card {
             margin-bottom: 1rem;
             border-radius: 1rem;
@@ -41,13 +45,7 @@
                 line-height: 1.5;
                 background-color: white;
                 border-radius: 0 0 1rem 1rem;
-
-                & i {
-                    float: right;
-                    padding: 0.5rem 0.5rem 0 0;
-                    font-size: 1.2rem;
-                    color: $color-darkBack;
-                }
+                text-decoration: none;
             }
         }
     }

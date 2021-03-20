@@ -1,13 +1,16 @@
-@import "./utils/variables.scss";
-@import "./utils/mixins.scss";
+@import "./utils/variables";
+@import "./utils/mixins";
 
-@import "./base/base.scss";
-@import "./base/typography.scss";
+@import "./base/base";
+@import "./base/typography";
 
-@import "./components/button.scss";
+@import "./components/button";
+@import "./components/card";
+@import "./components/heart";
 
-@import "./layout/headers.scss";
-@import "./layout/homePage-1presentationSection.scss";
-@import "./layout/homePage-2guidelineSection.scss";
-@import "./layout/homePage-3restaurantSection.scss";
-@import "./layout/footer.scss";
+@import "./layout/headers";
+@import "./layout/homePage-1presentationSection";
+@import "./layout/homePage-2guidelineSection";
+@import "./layout/homePage-3restaurantSection";
+@import "./layout/menuPage";
+@import "./layout/footer";
