@@ -85,11 +85,35 @@ p {
   line-height: 1.1rem;
 }
 
-.components__heart {
+.components__heart--outline {
   font-size: 1.2rem;
   color: #353535;
-  float: right;
+  position: absolute;
+  right: 10vw;
   padding: 0.5rem;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 500ms;
+}
+.components__heart--outline:hover {
+  opacity: 0;
+}
+.components__heart--outline:hover + .components__heart--gradient {
+  opacity: 1;
+}
+
+.components__heart--gradient {
+  font-size: 1.2rem;
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: absolute;
+  right: 10vw;
+  padding: 0.5rem;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 500ms;
 }
 
 .header {
@@ -228,7 +252,7 @@ p {
   padding: 0.3rem 0.5rem;
   border-radius: 0.1rem;
   position: absolute;
-  left: 70%;
+  right: 8vw;
   font-size: 0.6rem;
   color: #278870;
   background-color: #99E2D0;
