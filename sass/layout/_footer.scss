@@ -12,6 +12,11 @@
             & li {
                 font-size: 0.7rem;
                 line-height: 1.2rem;
+                
+                & a {
+                    color: white;
+                    text-decoration: none;
+                }
 
                 & i {
                     font-size: 0.5rem;
