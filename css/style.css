@@ -65,6 +65,10 @@ p {
   align-items: center;
   align-self: center;
 }
+.components__button:hover {
+  background: linear-gradient(to left top, #a16be0, 60%, #ff93e1);
+  box-shadow: 0 0.2rem 0.3rem #aaaaaa;
+}
 
 .components__card__menu {
   height: 3rem;
