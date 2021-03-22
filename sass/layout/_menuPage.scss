@@ -44,6 +44,8 @@
 
             &__name {
                 width: 85%;
+                padding: 0.3rem 0.5rem;
+                overflow: hidden;
                 
                 & > h3 {
                     white-space: nowrap;
@@ -58,6 +60,7 @@
             }
 
             &__price {
+                padding: 0.3rem 0.5rem;
                 font-size: 0.7rem;
                 align-self: flex-end;
             }
