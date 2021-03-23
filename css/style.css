@@ -151,6 +151,11 @@ p {
 .components__card__menu:hover .components__card__checkCircle .fa-check-circle {
   transform: rotate(360deg);
 }
+@media screen and (min-width: 768px) {
+  .components__card__menu {
+    width: 48%;
+  }
+}
 
 .components__card__checkCircle {
   width: 0px;
@@ -200,6 +205,18 @@ p {
   z-index: 0;
   opacity: 0;
   transition: opacity 500ms;
+}
+
+@media screen and (min-width: 768px) {
+  .components__heart--right {
+    right: 7vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .components__heart--left {
+    right: 54vw;
+  }
 }
 
 .header {
@@ -261,12 +278,23 @@ p {
   align-content: space-around;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .guidelineSection__steps {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .guidelineSection__steps__card {
   width: 95%;
   margin-bottom: 1rem;
   border-radius: 1rem;
   box-shadow: 0 0.2rem 0.3rem #d1d1d1;
   background-color: #f6f6f6;
+}
+@media screen and (min-width: 768px) {
+  .guidelineSection__steps__card {
+    width: 30%;
+  }
 }
 .guidelineSection__steps__card__number {
   width: 1.1rem;
@@ -278,6 +306,17 @@ p {
   line-height: 1.1rem;
   position: absolute;
   left: 4%;
+}
+@media screen and (min-width: 768px) {
+  .guidelineSection__steps__card__number--1 {
+    left: 1%;
+  }
+  .guidelineSection__steps__card__number--2 {
+    left: 34%;
+  }
+  .guidelineSection__steps__card__number--3 {
+    left: 67.5%;
+  }
 }
 .guidelineSection__steps__card__text {
   padding: 1rem 0;
@@ -291,19 +330,41 @@ p {
   padding-right: 1.5rem;
   font-size: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .guidelineSection__steps__card__text .fa-mobile-alt {
+    padding-left: 0.8rem;
+    padding-right: 0.4rem;
+  }
+}
 .guidelineSection__steps__card__text .fa-ellipsis-v {
   padding-left: 1.5rem;
   font-size: 0.7rem;
+}
+@media screen and (min-width: 768px) {
+  .guidelineSection__steps__card__text .fa-ellipsis-v {
+    padding-left: 0.8rem;
+  }
 }
 .guidelineSection__steps__card__text .fa-bars {
   padding-left: 0.1rem;
   padding-right: 1.3rem;
   font-size: 0.7rem;
 }
+@media screen and (min-width: 768px) {
+  .guidelineSection__steps__card__text .fa-bars {
+    padding-right: 0.4rem;
+  }
+}
 .guidelineSection__steps__card__text .fa-store {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   font-size: 0.8rem;
+}
+@media screen and (min-width: 768px) {
+  .guidelineSection__steps__card__text .fa-store {
+    padding-left: 0.8rem;
+    padding-right: 0.4rem;
+  }
 }
 .guidelineSection__steps__card__text:hover > .fas {
   color: #9356DC;
@@ -323,8 +384,21 @@ p {
   margin: 0 1rem;
   padding-bottom: 2rem;
 }
+@media screen and (min-width: 768px) {
+  .restaurantSection__result {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
 .restaurantSection__result a {
   text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .restaurantSection__result a {
+    width: 45%;
+  }
 }
 .restaurantSection__result__card {
   margin-bottom: 1rem;
@@ -342,6 +416,11 @@ p {
   font-size: 0.6rem;
   color: #278870;
   background-color: #99E2D0;
+}
+@media screen and (min-width: 768px) {
+  .restaurantSection__result__card__new--1 {
+    right: 56vw;
+  }
 }
 .restaurantSection__result__card__img {
   width: 100%;
@@ -386,6 +465,14 @@ p {
   margin: 0 1rem;
   margin-top: 1.5rem;
 }
+@media screen and (min-width: 768px) {
+  .menuSection__menu__dishes--responsiveBlock {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 .menuSection__menu__dishes > p {
   font-size: 0.8rem;
   margin-bottom: 0.3rem;
@@ -429,6 +516,12 @@ p {
   list-style-type: none;
   padding-top: 0.5rem;
 }
+@media screen and (min-width: 768px) {
+  .footer__block ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .footer__block ul li {
   font-size: 0.7rem;
   line-height: 1.2rem;
@@ -446,7 +539,7 @@ p {
   background-color: #f2eafb;
   width: 100vw;
   height: 100%;
-  position: absolute;
+  position: fixed;
   opacity: 0.95;
   display: flex;
   justify-content: space-around;

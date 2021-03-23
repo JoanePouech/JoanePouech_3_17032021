@@ -30,3 +30,14 @@
     opacity: 0;
     transition: opacity 500ms;
 }
+
+.components__heart--right {
+    @media screen and (min-width: 768px) {
+        right: 7vw;
+    }
+}
+.components__heart--left {
+    @media screen and (min-width: 768px) {
+        right: 54vw;
+    }
+}

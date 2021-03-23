@@ -10,12 +10,21 @@
         padding-bottom: 2rem;
         @include flexColumn;
 
+        @media screen and (min-width: 768px)  {
+            flex-direction: row;
+            justify-content: space-between;            
+        }
+
         &__card {
             width: 95%;
             margin-bottom: 1rem;  
             border-radius: 1rem;
             @include shadow;
             background-color: $color-lightBack;
+
+            @media screen and (min-width: 768px)  {
+                width: 30%;       
+            }
 
             &__number {
                 width: 1.1rem;
@@ -26,7 +35,19 @@
                 font-size: 0.6rem;
                 line-height: 1.1rem;
                 position: absolute;
-                left: 4%;  
+                left: 4%;
+
+                @media screen and (min-width: 768px) {                 
+                    &--1 {
+                        left: 1%;  
+                    }
+                    &--2 {
+                        left: 34%;  
+                    }
+                    &--3 {
+                        left: 67.5%;  
+                    }
+                }                 
             }
 
             &__text {                
@@ -40,20 +61,34 @@
                     padding-left: 1.5rem;
                     padding-right: 1.5rem;
                     font-size: 1rem;
+                    @media screen and (min-width: 768px) {
+                        padding-left: 0.8rem;
+                        padding-right: 0.4rem;                        
+                    }
                 }
                 & .fa-ellipsis-v {
                     padding-left: 1.5rem;
                     font-size: 0.7rem;
+                    @media screen and (min-width: 768px) {
+                        padding-left: 0.8rem;                      
+                    }
                 }
                 & .fa-bars {
                     padding-left: 0.1rem;
                     padding-right: 1.3rem;
                     font-size: 0.7rem;
+                    @media screen and (min-width: 768px) {
+                        padding-right: 0.4rem;                        
+                    }
                 }
                 & .fa-store {
                     padding-left: 1.5rem;
                     padding-right: 1.5rem;
                     font-size: 0.8rem;
+                    @media screen and (min-width: 768px) {
+                        padding-left: 0.8rem;
+                        padding-right: 0.4rem;                        
+                    }
                 }
 
                 &:hover > .fas{

@@ -9,6 +9,11 @@
             list-style-type: none;
             padding-top: 0.5rem;
 
+            @media screen and (min-width: 768px) {
+                display: flex;
+                justify-content: space-between;                
+            }
+
             & li {
                 font-size: 0.7rem;
                 line-height: 1.2rem;

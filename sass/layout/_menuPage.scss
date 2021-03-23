@@ -29,6 +29,15 @@
             @include mainMargin;
             margin-top: 1.5rem;
 
+            &--responsiveBlock {
+                @media screen and (min-width: 768px) {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;                    
+                }
+            }
+
             & > p {
                 font-size: 0.8rem;
                 margin-bottom: 0.3rem;
