@@ -1,5 +1,11 @@
 .menuSection {
-    margin-bottom: -60px;
+    margin-bottom: -60px;    
+    @media screen and (min-width: $break-tablet) {
+        margin-bottom: -100px;        
+    }
+    @media screen and (min-width: $break-medium) {
+        margin-bottom: -160px;        
+    }
 
     &__image {
         width: 100vw;
@@ -14,6 +20,12 @@
         top: -60px;
         display: flex;
         flex-direction: column;
+        @media screen and (min-width: $break-tablet) and (max-width: $break-medium) {
+            top: -100px;
+        }
+        @media screen and (min-width: $break-medium) {
+            top: -160px;        
+        }
 
         &__title {
             @include mainMargin;
@@ -30,7 +42,7 @@
             margin-top: 1.5rem;
 
             &--responsiveBlock {
-                @media screen and (min-width: 768px) {
+                @media screen and (min-width: $break-tablet) {
                     display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;

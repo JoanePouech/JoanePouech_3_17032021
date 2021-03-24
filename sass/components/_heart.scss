@@ -24,20 +24,56 @@
     -webkit-background-clip: text;
     color: transparent;
     position: absolute;
-    right: 10vw;
+    right: 10vw;    
     padding: 0.5rem;
     z-index: 0;
     opacity: 0;
     transition: opacity 500ms;
 }
 
-.components__heart--right {
-    @media screen and (min-width: 768px) {
-        right: 7vw;
+.components__heart {
+    &--1 {
+        @media screen and (min-width: $break-tablet) {
+            right: 5vw;
+        }
+        @media screen and (min-width: $break-medium) {
+            right: 70vw;
+        }
+        @media screen and (min-width: $break-large) {
+            right: 66vw;
+        }
     }
-}
-.components__heart--left {
-    @media screen and (min-width: 768px) {
-        right: 54vw;
+    &--2 {
+        @media screen and (min-width: $break-tablet) {
+            right: 54vw;
+        }
+        @media screen and (min-width: $break-medium) {
+            right: 37vw;
+        }
+        @media screen and (min-width: $break-large) {
+            right: 39vw;
+        }
+    }
+    &--3 {
+        @media screen and (min-width: $break-tablet) {
+            right: 5vw;
+        }
+        @media screen and (min-width: $break-medium) {
+            right: 4vw;
+        }
+        @media screen and (min-width: $break-large) {
+            right: 11vw;
+        }
+    }
+    &--4 {
+        @media screen and (min-width: $break-tablet) {
+            right: 54vw;
+        }
+        @media screen and (min-width: $break-medium) {
+            right: 70vw;
+        }
+        @media screen and (min-width: $break-large) {
+            right: 66vw;
+        }
     }
 }

@@ -9,7 +9,7 @@
             list-style-type: none;
             padding-top: 0.5rem;
 
-            @media screen and (min-width: 768px) {
+            @media screen and (min-width: $break-tablet) {
                 display: flex;
                 justify-content: space-between;                
             }

@@ -3,6 +3,10 @@
     &__title {
         @include mainMargin;
         padding: 2rem 0 1rem 0;
+        @media screen and (min-width:$break-large) {
+            max-width: 1150px;
+            margin: auto;            
+        }
     }
 
     &__steps {
@@ -10,9 +14,16 @@
         padding-bottom: 2rem;
         @include flexColumn;
 
-        @media screen and (min-width: 768px)  {
+        @media screen and (min-width: $break-tablet)  {
             flex-direction: row;
             justify-content: space-between;            
+        }
+        @media screen and (min-width: $break-medium)  {
+            justify-content: space-around;            
+        }
+        @media screen and (min-width:$break-large) {
+            max-width: 1150px;
+            margin: auto;            
         }
 
         &__card {
@@ -22,8 +33,11 @@
             @include shadow;
             background-color: $color-lightBack;
 
-            @media screen and (min-width: 768px)  {
-                width: 30%;       
+            @media screen and (min-width: $break-tablet)  {
+                width: 31%;       
+            }
+            @media screen and (min-width: $break-medium)  {
+                width: 29%;       
             }
 
             &__number {
@@ -34,20 +48,9 @@
                 border-radius: 1rem;
                 font-size: 0.6rem;
                 line-height: 1.1rem;
-                position: absolute;
-                left: 4%;
-
-                @media screen and (min-width: 768px) {                 
-                    &--1 {
-                        left: 1%;  
-                    }
-                    &--2 {
-                        left: 34%;  
-                    }
-                    &--3 {
-                        left: 67.5%;  
-                    }
-                }                 
+                position: relative;
+                float: left;
+                left: -4%;           
             }
 
             &__text {                
@@ -58,36 +61,31 @@
                     color: lighten($color-darkBack, 30%);
                 }
                 & .fa-mobile-alt {
-                    padding-left: 1.5rem;
-                    padding-right: 1.5rem;
                     font-size: 1rem;
-                    @media screen and (min-width: 768px) {
-                        padding-left: 0.8rem;
-                        padding-right: 0.4rem;                        
-                    }
                 }
                 & .fa-ellipsis-v {
-                    padding-left: 1.5rem;
                     font-size: 0.7rem;
-                    @media screen and (min-width: 768px) {
-                        padding-left: 0.8rem;                      
-                    }
                 }
                 & .fa-bars {
                     padding-left: 0.1rem;
-                    padding-right: 1.3rem;
                     font-size: 0.7rem;
-                    @media screen and (min-width: 768px) {
-                        padding-right: 0.4rem;                        
-                    }
                 }
                 & .fa-store {
-                    padding-left: 1.5rem;
-                    padding-right: 1.5rem;
                     font-size: 0.8rem;
-                    @media screen and (min-width: 768px) {
-                        padding-left: 0.8rem;
+                }
+                & .fa-padding--left {
+                    padding-left: 0.5rem;
+                    @media screen and (min-width: $break-tablet) and (max-width: $break-medium) {
+                        padding-left: 0;
+                    }
+                }
+                & .fa-padding--right {
+                    padding-right: 1rem;
+                    @media screen and (min-width: $break-tablet) and (max-width: $break-medium) {
                         padding-right: 0.4rem;                        
+                    }
+                    @media screen and (min-width: $break-medium) {
+                        padding-right: 1.5rem;                        
                     }
                 }
 

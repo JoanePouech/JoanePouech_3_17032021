@@ -4,23 +4,34 @@
     &__title {
         @include mainMargin;
         padding: 2rem 0 1rem 0;
+        @media screen and (min-width:$break-large) {
+            max-width: 1150px;
+            margin: auto;            
+        }
     }
 
     &__result {
         @include mainMargin;
         padding-bottom: 2rem;
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: $break-tablet) {
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-between;
             flex-wrap: wrap;
+        }
+        @media screen and (min-width:$break-large) {
+            max-width: 1150px;
+            margin: auto;            
         }
 
         & a {
             text-decoration: none;
-            @media screen and (min-width: 768px) {
-                width: 45%;
+            @media screen and (min-width: $break-tablet) {
+                width: 48%;
+            }
+            @media screen and (min-width: $break-medium) {
+                width: 31%;
             }
         }
 
@@ -41,10 +52,29 @@
                 color: darken($color-tertiary, 40%);
                 background-color: $color-tertiary;
 
-                @media screen and (min-width: 768px) {
+                @media screen and (min-width: $break-tablet) {
                     &--1 {
-                        right: 56vw;
-                    }                    
+                        right: 54vw;
+                    }    
+                    &--2 {
+                        right: 5vw;
+                    }                 
+                }
+                @media screen and (min-width: $break-medium) {
+                    &--1 {
+                        right: 70vw;
+                    }    
+                    &--2 {
+                        right: 37vw;
+                    }                 
+                }
+                @media screen and (min-width: $break-large) {
+                    &--1 {
+                        right: 67vw;
+                    }    
+                    &--2 {
+                        right: 39vw;
+                    }                 
                 }
             }
 

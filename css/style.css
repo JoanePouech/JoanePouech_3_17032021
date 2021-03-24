@@ -208,14 +208,63 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .components__heart--right {
-    right: 7vw;
+  .components__heart--1 {
+    right: 5vw;
   }
 }
-
+@media screen and (min-width: 1023px) {
+  .components__heart--1 {
+    right: 70vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .components__heart--1 {
+    right: 66vw;
+  }
+}
 @media screen and (min-width: 768px) {
-  .components__heart--left {
+  .components__heart--2 {
     right: 54vw;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .components__heart--2 {
+    right: 37vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .components__heart--2 {
+    right: 39vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .components__heart--3 {
+    right: 5vw;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .components__heart--3 {
+    right: 4vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .components__heart--3 {
+    right: 11vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .components__heart--4 {
+    right: 54vw;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .components__heart--4 {
+    right: 70vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .components__heart--4 {
+    right: 66vw;
   }
 }
 
@@ -268,6 +317,12 @@ p {
   margin: 0 1rem;
   padding: 2rem 0 1rem 0;
 }
+@media screen and (min-width: 1200px) {
+  .guidelineSection__title {
+    max-width: 1150px;
+    margin: auto;
+  }
+}
 .guidelineSection__steps {
   margin: 0 1rem;
   padding-bottom: 2rem;
@@ -284,6 +339,17 @@ p {
     justify-content: space-between;
   }
 }
+@media screen and (min-width: 1023px) {
+  .guidelineSection__steps {
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .guidelineSection__steps {
+    max-width: 1150px;
+    margin: auto;
+  }
+}
 .guidelineSection__steps__card {
   width: 95%;
   margin-bottom: 1rem;
@@ -293,7 +359,12 @@ p {
 }
 @media screen and (min-width: 768px) {
   .guidelineSection__steps__card {
-    width: 30%;
+    width: 31%;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .guidelineSection__steps__card {
+    width: 29%;
   }
 }
 .guidelineSection__steps__card__number {
@@ -304,19 +375,9 @@ p {
   border-radius: 1rem;
   font-size: 0.6rem;
   line-height: 1.1rem;
-  position: absolute;
-  left: 4%;
-}
-@media screen and (min-width: 768px) {
-  .guidelineSection__steps__card__number--1 {
-    left: 1%;
-  }
-  .guidelineSection__steps__card__number--2 {
-    left: 34%;
-  }
-  .guidelineSection__steps__card__number--3 {
-    left: 67.5%;
-  }
+  position: relative;
+  float: left;
+  left: -4%;
 }
 .guidelineSection__steps__card__text {
   padding: 1rem 0;
@@ -326,44 +387,37 @@ p {
   color: #828282;
 }
 .guidelineSection__steps__card__text .fa-mobile-alt {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
   font-size: 1rem;
 }
-@media screen and (min-width: 768px) {
-  .guidelineSection__steps__card__text .fa-mobile-alt {
-    padding-left: 0.8rem;
-    padding-right: 0.4rem;
-  }
-}
 .guidelineSection__steps__card__text .fa-ellipsis-v {
-  padding-left: 1.5rem;
   font-size: 0.7rem;
-}
-@media screen and (min-width: 768px) {
-  .guidelineSection__steps__card__text .fa-ellipsis-v {
-    padding-left: 0.8rem;
-  }
 }
 .guidelineSection__steps__card__text .fa-bars {
   padding-left: 0.1rem;
-  padding-right: 1.3rem;
   font-size: 0.7rem;
 }
-@media screen and (min-width: 768px) {
-  .guidelineSection__steps__card__text .fa-bars {
+.guidelineSection__steps__card__text .fa-store {
+  font-size: 0.8rem;
+}
+.guidelineSection__steps__card__text .fa-padding--left {
+  padding-left: 0.5rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .guidelineSection__steps__card__text .fa-padding--left {
+    padding-left: 0;
+  }
+}
+.guidelineSection__steps__card__text .fa-padding--right {
+  padding-right: 1rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .guidelineSection__steps__card__text .fa-padding--right {
     padding-right: 0.4rem;
   }
 }
-.guidelineSection__steps__card__text .fa-store {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  font-size: 0.8rem;
-}
-@media screen and (min-width: 768px) {
-  .guidelineSection__steps__card__text .fa-store {
-    padding-left: 0.8rem;
-    padding-right: 0.4rem;
+@media screen and (min-width: 1023px) {
+  .guidelineSection__steps__card__text .fa-padding--right {
+    padding-right: 1.5rem;
   }
 }
 .guidelineSection__steps__card__text:hover > .fas {
@@ -380,6 +434,12 @@ p {
   margin: 0 1rem;
   padding: 2rem 0 1rem 0;
 }
+@media screen and (min-width: 1200px) {
+  .restaurantSection__title {
+    max-width: 1150px;
+    margin: auto;
+  }
+}
 .restaurantSection__result {
   margin: 0 1rem;
   padding-bottom: 2rem;
@@ -388,8 +448,14 @@ p {
   .restaurantSection__result {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .restaurantSection__result {
+    max-width: 1150px;
+    margin: auto;
   }
 }
 .restaurantSection__result a {
@@ -397,7 +463,12 @@ p {
 }
 @media screen and (min-width: 768px) {
   .restaurantSection__result a {
-    width: 45%;
+    width: 48%;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .restaurantSection__result a {
+    width: 31%;
   }
 }
 .restaurantSection__result__card {
@@ -419,7 +490,26 @@ p {
 }
 @media screen and (min-width: 768px) {
   .restaurantSection__result__card__new--1 {
-    right: 56vw;
+    right: 54vw;
+  }
+  .restaurantSection__result__card__new--2 {
+    right: 5vw;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .restaurantSection__result__card__new--1 {
+    right: 70vw;
+  }
+  .restaurantSection__result__card__new--2 {
+    right: 37vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .restaurantSection__result__card__new--1 {
+    right: 67vw;
+  }
+  .restaurantSection__result__card__new--2 {
+    right: 39vw;
   }
 }
 .restaurantSection__result__card__img {
@@ -440,6 +530,16 @@ p {
 .menuSection {
   margin-bottom: -60px;
 }
+@media screen and (min-width: 768px) {
+  .menuSection {
+    margin-bottom: -100px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .menuSection {
+    margin-bottom: -160px;
+  }
+}
 .menuSection__image {
   width: 100vw;
 }
@@ -452,6 +552,16 @@ p {
   top: -60px;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .menuSection__menu {
+    top: -100px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .menuSection__menu {
+    top: -160px;
+  }
 }
 .menuSection__menu__title {
   margin: 0 1rem;
@@ -605,6 +715,11 @@ p {
 .spin--2 {
   left: 10%;
 }
+@media screen and (min-width: 768px) {
+  .spin--2 {
+    left: 13%;
+  }
+}
 .spin--3 {
   left: 28%;
 }
@@ -614,6 +729,11 @@ p {
 .spin--5 {
   left: 42%;
 }
+@media screen and (min-width: 768px) {
+  .spin--5 {
+    left: 45%;
+  }
+}
 .spin--6 {
   left: 60%;
 }
@@ -622,6 +742,11 @@ p {
 }
 .spin--8 {
   left: 74%;
+}
+@media screen and (min-width: 768px) {
+  .spin--8 {
+    left: 77%;
+  }
 }
 .spin--9 {
   left: 92%;
