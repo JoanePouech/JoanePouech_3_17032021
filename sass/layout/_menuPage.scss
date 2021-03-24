@@ -7,8 +7,12 @@
         margin-bottom: -160px;        
     }
 
-    &__image {
+    &__background {
+        max-height: 800px;
+
+        &__image {
         width: 100vw;
+        }
     }
 
     &__menu {
@@ -29,7 +33,11 @@
 
         &__title {
             @include mainMargin;
-            padding-top: 1rem;            
+            padding-top: 1rem;
+            @media screen and (min-width:$break-large) {
+                max-width: 1150px;
+                margin: auto;            
+            }            
 
             & h5 {
                 color: black; 
@@ -40,6 +48,13 @@
         &__dishes {
             @include mainMargin;
             margin-top: 1.5rem;
+
+            @media screen and (min-width:$break-large) {
+                max-width: 1150px;
+                margin: auto;
+                width: 100%;            
+                padding-top: 1.5rem;
+            }
 
             &--responsiveBlock {
                 @media screen and (min-width: $break-tablet) {

@@ -4,6 +4,10 @@
     &__block {
         @include mainMargin;
         padding: 1rem 0;
+        @media screen and (min-width:$break-large) {
+            max-width: 1150px;
+            margin: auto;            
+        }
 
         & ul {
             list-style-type: none;

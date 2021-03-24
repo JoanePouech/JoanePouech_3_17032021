@@ -145,6 +145,9 @@ p {
 .components__card__menu--10 {
   animation-delay: 1000ms;
 }
+.components__card__menu--11 {
+  animation-delay: 1100ms;
+}
 .components__card__menu:hover .components__card__checkCircle {
   width: 70px;
 }
@@ -540,7 +543,10 @@ p {
     margin-bottom: -160px;
   }
 }
-.menuSection__image {
+.menuSection__background {
+  max-height: 800px;
+}
+.menuSection__background__image {
   width: 100vw;
 }
 .menuSection__menu {
@@ -567,6 +573,12 @@ p {
   margin: 0 1rem;
   padding-top: 1rem;
 }
+@media screen and (min-width: 1200px) {
+  .menuSection__menu__title {
+    max-width: 1150px;
+    margin: auto;
+  }
+}
 .menuSection__menu__title h5 {
   color: black;
   font-size: 1.2rem;
@@ -574,6 +586,14 @@ p {
 .menuSection__menu__dishes {
   margin: 0 1rem;
   margin-top: 1.5rem;
+}
+@media screen and (min-width: 1200px) {
+  .menuSection__menu__dishes {
+    max-width: 1150px;
+    margin: auto;
+    width: 100%;
+    padding-top: 1.5rem;
+  }
 }
 @media screen and (min-width: 768px) {
   .menuSection__menu__dishes--responsiveBlock {
@@ -621,6 +641,12 @@ p {
 .footer__block {
   margin: 0 1rem;
   padding: 1rem 0;
+}
+@media screen and (min-width: 1200px) {
+  .footer__block {
+    max-width: 1150px;
+    margin: auto;
+  }
 }
 .footer__block ul {
   list-style-type: none;
