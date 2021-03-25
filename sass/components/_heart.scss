@@ -21,7 +21,7 @@
 .components__heart--gradient {
     font-size: 2.4rem;
     background: linear-gradient($color-primary, $color-secondary);
-    background-clip: text;
+    -moz-background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     position: absolute;

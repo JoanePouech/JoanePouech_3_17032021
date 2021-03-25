@@ -203,7 +203,7 @@ p {
 .components__heart--gradient {
   font-size: 2.4rem;
   background: linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
+  -moz-background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   position: absolute;
@@ -610,7 +610,7 @@ p {
   padding-right: 1rem;
 }
 .footer__block ul li:hover {
-  text-decoration: underline white 1px solid;
+  text-decoration: underline white solid;
 }
 
 .spinner {
