@@ -32,6 +32,7 @@
             border-radius: 2rem;
             @include shadow;
             background-color: $color-lightBack;
+            position: relative;
 
             @media screen and (min-width: $break-tablet)  {
                 width: 31%;       
@@ -48,8 +49,7 @@
                 border-radius: 2rem;
                 font-size: 1.2rem;
                 line-height: 2.2rem;
-                position: relative;
-                float: left;
+                position: absolute;
                 left: -4%;           
             }
 
@@ -74,9 +74,9 @@
                     font-size: 1.6rem;
                 }
                 & .fa-padding--left {
-                    padding-left: 1rem;
+                    padding-left: 3rem;
                     @media screen and (min-width: $break-tablet) and (max-width: $break-medium) {
-                        padding-left: 0;
+                        padding-left: 2rem;                        
                     }
                 }
                 & .fa-padding--right {

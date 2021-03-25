@@ -35,8 +35,9 @@
             @include mainMargin;
             padding-top: 2rem;
             @media screen and (min-width:$break-large) {
-                max-width: 1150px;
-                margin: auto;            
+                width: 1150px;
+                margin: auto;  
+                position: relative;          
             }            
 
             & h5 {

@@ -41,41 +41,17 @@
             display: flex;
             flex-direction: column;
             @include shadow;
+            position: relative;
 
             &__new {
                 margin-top: 1rem;
                 padding: 0.6rem 1rem;
                 border-radius: 0.2rem;
                 position: absolute;
-                right: 8vw;
+                right: 2rem;
                 font-size: 1.2rem;
                 color: darken($color-tertiary, 40%);
                 background-color: $color-tertiary;
-
-                @media screen and (min-width: $break-tablet) {
-                    &--1 {
-                        right: 54vw;
-                    }    
-                    &--2 {
-                        right: 5vw;
-                    }                 
-                }
-                @media screen and (min-width: $break-medium) {
-                    &--1 {
-                        right: 70vw;
-                    }    
-                    &--2 {
-                        right: 37vw;
-                    }                 
-                }
-                @media screen and (min-width: $break-large) {
-                    &--1 {
-                        right: 67vw;
-                    }    
-                    &--2 {
-                        right: 39vw;
-                    }                 
-                }
             }
 
             &__img {
@@ -92,6 +68,7 @@
                 background-color: white;
                 border-radius: 0 0 2rem 2rem;
                 text-decoration: none;
+                position: relative;
             }
         }
     }

@@ -183,7 +183,7 @@ p {
   font-size: 2.4rem;
   color: #353535;
   position: absolute;
-  right: 10vw;
+  right: 2rem;
   padding: 1rem;
   z-index: 1;
   opacity: 1;
@@ -203,72 +203,11 @@ p {
   -webkit-background-clip: text;
   color: transparent;
   position: absolute;
-  right: 10vw;
+  right: 2rem;
   padding: 1rem;
   z-index: 0;
   opacity: 0;
   transition: opacity 500ms;
-}
-
-@media screen and (min-width: 768px) {
-  .components__heart--1 {
-    right: 5vw;
-  }
-}
-@media screen and (min-width: 1023px) {
-  .components__heart--1 {
-    right: 70vw;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .components__heart--1 {
-    right: 66vw;
-  }
-}
-@media screen and (min-width: 768px) {
-  .components__heart--2 {
-    right: 54vw;
-  }
-}
-@media screen and (min-width: 1023px) {
-  .components__heart--2 {
-    right: 37vw;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .components__heart--2 {
-    right: 39vw;
-  }
-}
-@media screen and (min-width: 768px) {
-  .components__heart--3 {
-    right: 5vw;
-  }
-}
-@media screen and (min-width: 1023px) {
-  .components__heart--3 {
-    right: 4vw;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .components__heart--3 {
-    right: 11vw;
-  }
-}
-@media screen and (min-width: 768px) {
-  .components__heart--4 {
-    right: 54vw;
-  }
-}
-@media screen and (min-width: 1023px) {
-  .components__heart--4 {
-    right: 70vw;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .components__heart--4 {
-    right: 66vw;
-  }
 }
 
 .header {
@@ -359,6 +298,7 @@ p {
   border-radius: 2rem;
   box-shadow: 0 0.4rem 0.6rem #d1d1d1;
   background-color: #f6f6f6;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .guidelineSection__steps__card {
@@ -378,8 +318,7 @@ p {
   border-radius: 2rem;
   font-size: 1.2rem;
   line-height: 2.2rem;
-  position: relative;
-  float: left;
+  position: absolute;
   left: -4%;
 }
 .guidelineSection__steps__card__text {
@@ -403,11 +342,11 @@ p {
   font-size: 1.6rem;
 }
 .guidelineSection__steps__card__text .fa-padding--left {
-  padding-left: 1rem;
+  padding-left: 3rem;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .guidelineSection__steps__card__text .fa-padding--left {
-    padding-left: 0;
+    padding-left: 2rem;
   }
 }
 .guidelineSection__steps__card__text .fa-padding--right {
@@ -480,40 +419,17 @@ p {
   display: flex;
   flex-direction: column;
   box-shadow: 0 0.4rem 0.6rem #d1d1d1;
+  position: relative;
 }
 .restaurantSection__result__card__new {
   margin-top: 1rem;
   padding: 0.6rem 1rem;
   border-radius: 0.2rem;
   position: absolute;
-  right: 8vw;
+  right: 2rem;
   font-size: 1.2rem;
   color: #278870;
   background-color: #99E2D0;
-}
-@media screen and (min-width: 768px) {
-  .restaurantSection__result__card__new--1 {
-    right: 54vw;
-  }
-  .restaurantSection__result__card__new--2 {
-    right: 5vw;
-  }
-}
-@media screen and (min-width: 1023px) {
-  .restaurantSection__result__card__new--1 {
-    right: 70vw;
-  }
-  .restaurantSection__result__card__new--2 {
-    right: 37vw;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .restaurantSection__result__card__new--1 {
-    right: 67vw;
-  }
-  .restaurantSection__result__card__new--2 {
-    right: 39vw;
-  }
 }
 .restaurantSection__result__card__img {
   width: 100%;
@@ -528,6 +444,7 @@ p {
   background-color: white;
   border-radius: 0 0 2rem 2rem;
   text-decoration: none;
+  position: relative;
 }
 
 .menuSection {
@@ -575,8 +492,9 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .menuSection__menu__title {
-    max-width: 1150px;
+    width: 1150px;
     margin: auto;
+    position: relative;
   }
 }
 .menuSection__menu__title h5 {
