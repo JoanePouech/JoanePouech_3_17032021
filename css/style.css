@@ -175,6 +175,7 @@ p {
 }
 
 .fa-check-circle {
+  font-size: 2rem;
   transform: rotate(0deg);
   transition: transform 500ms;
 }
@@ -216,12 +217,20 @@ p {
   justify-content: center;
   align-items: center;
   align-content: space-around;
-  padding-top: 2rem;
+  padding-top: 1rem;
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    width: 1150px;
+    margin: auto;
+    position: relative;
+  }
 }
 .header__return {
   color: black;
   position: absolute;
-  left: 5vw;
+  left: 3rem;
+  font-size: 1.8rem;
 }
 
 .presentationSection__searchBlock {
