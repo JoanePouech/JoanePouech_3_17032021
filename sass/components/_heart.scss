@@ -10,6 +10,7 @@
 
     &:hover {
         opacity: 0;
+        cursor: pointer;
 
         & + .components__heart--gradient {
             opacity: 1;

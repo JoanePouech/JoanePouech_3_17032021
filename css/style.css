@@ -87,7 +87,6 @@ p {
 .components__button {
   width: 22rem;
   height: 5rem;
-  margin: 3rem 0 4rem 0;
   background: linear-gradient(to left top, #9356DC, 60%, #FF79DA);
   border-radius: 4rem;
   box-shadow: 0 0.4rem 0.6rem #d1d1d1;
@@ -148,6 +147,9 @@ p {
 .components__card__menu--11 {
   animation-delay: 1100ms;
 }
+.components__card__menu:hover {
+  cursor: pointer;
+}
 .components__card__menu:hover .components__card__checkCircle {
   width: 70px;
 }
@@ -192,6 +194,7 @@ p {
 }
 .components__heart--outline:hover {
   opacity: 0;
+  cursor: pointer;
 }
 .components__heart--outline:hover + .components__heart--gradient {
   opacity: 1;
@@ -263,8 +266,9 @@ p {
   margin: 0 2rem;
   padding-top: 2rem;
 }
-.presentationSection__descriptionBlock a {
+.presentationSection__descriptionBlock__button {
   text-decoration: none;
+  margin: 3rem 0 4rem 0;
 }
 
 .guidelineSection__title {
@@ -379,6 +383,7 @@ p {
 }
 .guidelineSection__steps__card:hover {
   background-color: #f2eafb;
+  cursor: pointer;
 }
 
 .restaurantSection {
@@ -566,6 +571,7 @@ p {
 .menuSection__menu__button {
   align-self: center;
   text-decoration: none;
+  margin: 3rem 0 4rem 0;
 }
 
 .footer {

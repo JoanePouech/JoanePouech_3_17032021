@@ -18,11 +18,15 @@
         }
     }
 
-    &:hover .components__card__checkCircle {
-        width: 70px;        
+    &:hover {
+        cursor: pointer; 
+
+        & .components__card__checkCircle {
+        width: 70px;      
         
-        & .fa-check-circle {
-            transform: rotate(360deg);
+            & .fa-check-circle {
+                transform: rotate(360deg);
+            }
         }
     }
 
