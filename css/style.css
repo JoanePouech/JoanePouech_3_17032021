@@ -609,6 +609,9 @@ p {
   font-size: 1rem;
   padding-right: 1rem;
 }
+.footer__block ul li:hover {
+  text-decoration: underline white 1px solid;
+}
 
 .spinner {
   background-color: #f2eafb;
