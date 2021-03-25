@@ -3,7 +3,7 @@
 
     &__title {
         @include mainMargin;
-        padding: 2rem 0 1rem 0;
+        padding: 4rem 0 2rem 0;
         @media screen and (min-width:$break-large) {
             max-width: 1150px;
             margin: auto;            
@@ -12,7 +12,7 @@
 
     &__result {
         @include mainMargin;
-        padding-bottom: 2rem;
+        padding-bottom: 4rem;
 
         @media screen and (min-width: $break-tablet) {
             display: flex;
@@ -36,19 +36,19 @@
         }
 
         &__card {
-            margin-bottom: 1rem;
-            border-radius: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 2rem;
             display: flex;
             flex-direction: column;
             @include shadow;
 
             &__new {
-                margin-top: 0.5rem;
-                padding: 0.3rem 0.5rem;
-                border-radius: 0.1rem;
+                margin-top: 1rem;
+                padding: 0.6rem 1rem;
+                border-radius: 0.2rem;
                 position: absolute;
                 right: 8vw;
-                font-size: 0.6rem;
+                font-size: 1.2rem;
                 color: darken($color-tertiary, 40%);
                 background-color: $color-tertiary;
 
@@ -80,17 +80,17 @@
 
             &__img {
                 width: 100%;
-                height: 9rem;
+                height: 18rem;
                 object-fit: cover;
                 object-position: 10% 62%;
-                border-radius: 0.9rem 0.9rem 0 0;
+                border-radius: 1.8rem 1.8rem 0 0;
             }
 
             &__text {
-                padding: 0.5rem;
+                padding: 1rem;
                 line-height: 1.5;
                 background-color: white;
-                border-radius: 0 0 1rem 1rem;
+                border-radius: 0 0 2rem 2rem;
                 text-decoration: none;
             }
         }

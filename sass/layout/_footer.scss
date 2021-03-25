@@ -3,7 +3,7 @@
 
     &__block {
         @include mainMargin;
-        padding: 1rem 0;
+        padding: 2rem 0;
         @media screen and (min-width:$break-large) {
             max-width: 1150px;
             margin: auto;            
@@ -11,7 +11,7 @@
 
         & ul {
             list-style-type: none;
-            padding-top: 0.5rem;
+            padding-top: 1rem;
 
             @media screen and (min-width: $break-tablet) {
                 display: flex;
@@ -19,8 +19,8 @@
             }
 
             & li {
-                font-size: 0.7rem;
-                line-height: 1.2rem;
+                font-size: 1.4rem;
+                line-height: 2.4rem;
                 
                 & a {
                     color: white;
@@ -28,8 +28,8 @@
                 }
 
                 & i {
-                    font-size: 0.5rem;
-                    padding-right: 0.5rem;
+                    font-size: 1rem;
+                    padding-right: 1rem;
                 }
             }
         }        
