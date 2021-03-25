@@ -598,7 +598,7 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  animation: spinner 3000ms forwards;
+  animation: spinner 2000ms forwards;
 }
 .spinner__baseSpin {
   color: #d7c0f2;
@@ -627,31 +627,31 @@ p {
 }
 
 .spin--1 {
-  animation-delay: 300ms;
+  animation-delay: 200ms;
 }
 .spin--2 {
-  animation-delay: 600ms;
+  animation-delay: 400ms;
 }
 .spin--3 {
-  animation-delay: 900ms;
+  animation-delay: 600ms;
 }
 .spin--4 {
-  animation-delay: 1200ms;
+  animation-delay: 800ms;
 }
 .spin--5 {
-  animation-delay: 1500ms;
+  animation-delay: 1000ms;
 }
 .spin--6 {
-  animation-delay: 1800ms;
+  animation-delay: 1200ms;
 }
 .spin--7 {
-  animation-delay: 2100ms;
+  animation-delay: 1400ms;
 }
 .spin--8 {
-  animation-delay: 2400ms;
+  animation-delay: 1600ms;
 }
 .spin--9 {
-  animation-delay: 2700ms;
+  animation-delay: 1800ms;
 }
 .spin--1 {
   left: 3%;

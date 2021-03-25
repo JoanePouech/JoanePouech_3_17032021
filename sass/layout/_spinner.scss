@@ -8,7 +8,7 @@
     justify-content: space-around;
     align-items: center;
 
-    animation: spinner 3000ms forwards;
+    animation: spinner 2000ms forwards;
 
     &__baseSpin {
         color: lighten($color-primary, 25%);
@@ -41,7 +41,7 @@
 .spin {
     @for $i from 1 to 10 {
         &--#{$i} {
-            animation-delay: $i * 300ms;
+            animation-delay: $i * 200ms;
         }
     }
     &--1 {
