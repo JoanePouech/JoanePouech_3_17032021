@@ -469,11 +469,10 @@ p {
     margin-bottom: -160px;
   }
 }
-.menuSection__background {
+.menuSection__image {
   max-height: 800px;
-}
-.menuSection__background__image {
   width: 100vw;
+  object-fit: cover;
 }
 .menuSection__menu {
   width: 100vw;
