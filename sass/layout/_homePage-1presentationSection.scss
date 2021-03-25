@@ -24,5 +24,8 @@
             @include mainMargin;
             padding-top: 2rem;
         }
+        & a {
+            text-decoration: none;
+        }
     }
 }

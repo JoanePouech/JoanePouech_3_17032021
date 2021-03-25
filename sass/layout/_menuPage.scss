@@ -100,5 +100,10 @@
                 align-self: flex-end;
             }
         }
+
+        &__button {
+            align-self: center;
+            text-decoration: none;
+        }
     }
 }

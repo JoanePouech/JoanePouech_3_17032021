@@ -263,6 +263,9 @@ p {
   margin: 0 2rem;
   padding-top: 2rem;
 }
+.presentationSection__descriptionBlock a {
+  text-decoration: none;
+}
 
 .guidelineSection__title {
   margin: 0 2rem;
@@ -560,6 +563,10 @@ p {
   font-size: 1.4rem;
   align-self: flex-end;
 }
+.menuSection__menu__button {
+  align-self: center;
+  text-decoration: none;
+}
 
 .footer {
   background-color: #353535;
@@ -619,9 +626,9 @@ p {
 .spin--square {
   font-size: 3.2rem;
   background-color: #9356DC;
-  width: 6rem;
-  height: 6rem;
-  padding: 1.4rem;
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem;
   text-align: center;
   border-radius: 1rem;
   position: absolute;
@@ -629,7 +636,7 @@ p {
 }
 
 .spin--circle {
-  font-size: 1.4rem;
+  font-size: 1rem;
   position: absolute;
   top: 323px;
 }
