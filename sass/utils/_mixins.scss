@@ -1,0 +1,25 @@
+@mixin mainMargin {
+    margin: 0 2rem;
+}
+
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    text-align: center;    
+}
+
+@mixin shadow {
+    box-shadow: 0 0.4rem 0.6rem darken($color-mediumBack, 10%);
+}

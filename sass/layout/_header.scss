@@ -1,0 +1,18 @@
+.header {
+    @include flexRow;
+    padding-top: 1rem;
+
+    @media screen and (min-width: $break-large) {
+        width: 1150px;  
+        margin: auto;      
+        position: relative;
+    }
+
+    &__return {
+        color: black;
+        position: absolute;
+        left: 3rem;
+        font-size: 1.8rem;
+    }
+}
+

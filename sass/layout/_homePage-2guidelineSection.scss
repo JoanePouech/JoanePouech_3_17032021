@@ -1,0 +1,104 @@
+.guidelineSection {
+
+    &__title {
+        @include mainMargin;
+        padding: 4rem 0 2rem 0;
+        @media screen and (min-width:$break-large) {
+            max-width: 1150px;
+            margin: auto;            
+        }
+    }
+
+    &__steps {
+        @include mainMargin;
+        padding-bottom: 4rem;
+        @include flexColumn;
+
+        @media screen and (min-width: $break-tablet)  {
+            flex-direction: row;
+            justify-content: space-between;            
+        }
+        @media screen and (min-width: $break-medium)  {
+            justify-content: space-around;            
+        }
+        @media screen and (min-width:$break-large) {
+            max-width: 1150px;
+            margin: auto;            
+        }
+
+        &__card {
+            width: 95%;
+            margin-bottom: 2rem;  
+            border-radius: 2rem;
+            @include shadow;
+            background-color: $color-lightBack;
+            position: relative;
+
+            @media screen and (min-width: $break-tablet)  {
+                width: 31%;       
+            }
+            @media screen and (min-width: $break-medium)  {
+                width: 29%;       
+            }
+
+            &__number {
+                width: 2.2rem;
+                height: 2.2rem;
+                margin: 2rem 0;
+                background-color: $color-primary;
+                border-radius: 2rem;
+                font-size: 1.2rem;
+                line-height: 2.2rem;
+                position: absolute;
+                left: -4%;           
+            }
+
+            &__text {                
+                padding: 2rem 0;
+                text-align: left;
+
+                & .fas {
+                    color: lighten($color-darkBack, 30%);
+                }
+                & .fa-mobile-alt {
+                    font-size: 2rem;
+                }
+                & .fa-ellipsis-v {
+                    font-size: 1.4rem;
+                }
+                & .fa-bars {
+                    padding-left: 0.2rem;
+                    font-size: 1.4rem;
+                }
+                & .fa-store {
+                    font-size: 1.6rem;
+                }
+                & .fa-padding--left {
+                    padding-left: 3rem;
+                    @media screen and (min-width: $break-tablet) and (max-width: $break-medium) {
+                        padding-left: 2rem;                        
+                    }
+                }
+                & .fa-padding--right {
+                    padding-right: 2rem;
+                    @media screen and (min-width: $break-tablet) and (max-width: $break-medium) {
+                        padding-right: 0.8rem;                        
+                    }
+                    @media screen and (min-width: $break-medium) {
+                        padding-right: 3rem;                        
+                    }
+                }
+
+                &:hover > .fas{
+                    color: $color-primary;
+                }
+            }
+            
+            &:hover {
+                background-color: lighten($color-primary, 35%);
+                cursor: pointer;
+            }
+
+        }
+    }
+}

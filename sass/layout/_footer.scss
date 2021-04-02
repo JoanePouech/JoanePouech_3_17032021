@@ -1,0 +1,41 @@
+.footer {
+    background-color: $color-darkBack;
+
+    &__block {
+        @include mainMargin;
+        padding: 2rem 0;
+        @media screen and (min-width:$break-large) {
+            max-width: 1150px;
+            margin: auto;            
+        }
+
+        & ul {
+            list-style-type: none;
+            padding-top: 1rem;
+
+            @media screen and (min-width: $break-tablet) {
+                display: flex;
+                justify-content: space-between;                
+            }
+
+            & li {
+                font-size: 1.4rem;
+                line-height: 2.4rem;
+                
+                & a {
+                    color: white;
+                    text-decoration: none;
+                }
+
+                & i {
+                    font-size: 1rem;
+                    padding-right: 1rem;
+                }
+
+                &:hover {
+                    text-decoration: underline white solid;
+                }
+            }
+        }        
+    }
+}

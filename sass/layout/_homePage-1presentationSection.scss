@@ -1,0 +1,32 @@
+.presentationSection {
+    
+    &__searchBlock {        
+        height: 5rem;
+        @include flexRow;
+        background-color: $color-mediumBack;
+        box-shadow: inset 0 0.2rem 0.4rem darken($color-mediumBack, 20%);
+
+        & > i {
+            padding: 0 1rem;
+        }
+    }
+
+    &__descriptionBlock {        
+        @include flexColumn;
+        background-color: $color-lightBack;
+
+        &__title {
+            @include mainMargin;
+            padding: 4rem 4rem 0 4rem;
+        }
+
+        &__text {
+            @include mainMargin;
+            padding-top: 2rem;
+        }
+        &__button {
+            text-decoration: none;
+            margin: 3rem 0 4rem 0;  
+        }
+    }
+}

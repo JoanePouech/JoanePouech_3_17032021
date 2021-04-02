@@ -1,0 +1,75 @@
+.restaurantSection {
+    background-color: $color-lightBack;
+
+    &__title {
+        @include mainMargin;
+        padding: 4rem 0 2rem 0;
+        @media screen and (min-width:$break-large) {
+            max-width: 1150px;
+            margin: auto;            
+        }
+    }
+
+    &__result {
+        @include mainMargin;
+        padding-bottom: 4rem;
+
+        @media screen and (min-width: $break-tablet) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        @media screen and (min-width:$break-large) {
+            max-width: 1150px;
+            margin: auto;            
+        }
+
+        & a {
+            text-decoration: none;
+            @media screen and (min-width: $break-tablet) {
+                width: 48%;
+            }
+            @media screen and (min-width: $break-medium) {
+                width: 31%;
+            }
+        }
+
+        &__card {
+            margin-bottom: 2rem;
+            border-radius: 2rem;
+            display: flex;
+            flex-direction: column;
+            @include shadow;
+            position: relative;
+
+            &__new {
+                margin-top: 1rem;
+                padding: 0.6rem 1rem;
+                border-radius: 0.2rem;
+                position: absolute;
+                right: 2rem;
+                font-size: 1.2rem;
+                color: darken($color-tertiary, 40%);
+                background-color: $color-tertiary;
+            }
+
+            &__img {
+                width: 100%;
+                height: 18rem;
+                object-fit: cover;
+                object-position: 10% 62%;
+                border-radius: 1.8rem 1.8rem 0 0;
+            }
+
+            &__text {
+                padding: 1rem;
+                line-height: 1.5;
+                background-color: white;
+                border-radius: 0 0 2rem 2rem;
+                text-decoration: none;
+                position: relative;
+            }
+        }
+    }
+}

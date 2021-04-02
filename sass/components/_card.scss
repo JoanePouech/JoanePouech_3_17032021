@@ -1,0 +1,56 @@
+.components__card__menu {
+    height: 6rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 1.2rem;
+    @include shadow;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 2.2rem;
+
+    animation: appearance 600ms backwards ease-out;
+    @for $i from 1 through 11 {
+        &--#{$i} {            
+            animation-delay: $i * 100ms;
+        }
+    }
+
+    &:hover {
+        cursor: pointer; 
+
+        & .components__card__checkCircle {
+        width: 70px;      
+        
+            & .fa-check-circle {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    @media screen and (min-width: $break-tablet) {
+        width: 48%;        
+    }
+}
+
+.components__card__checkCircle {
+    width: 0px;
+    overflow: hidden;
+    height: 100%;
+    border-radius: 0 1rem 1rem 0;
+    color: white;
+    background-color: $color-tertiary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: right;
+    transition: width 300ms ease-in-out;
+}
+
+.fa-check-circle {
+    font-size: 2rem;
+    transform: rotate(0deg);
+    transition: transform 500ms;
+}
