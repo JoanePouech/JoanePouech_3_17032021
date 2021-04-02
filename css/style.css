@@ -297,7 +297,7 @@ p {
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1024px) {
   .guidelineSection__steps {
     justify-content: space-around;
   }
@@ -321,7 +321,7 @@ p {
     width: 31%;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1024px) {
   .guidelineSection__steps__card {
     width: 29%;
   }
@@ -360,7 +360,7 @@ p {
 .guidelineSection__steps__card__text .fa-padding--left {
   padding-left: 3rem;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .guidelineSection__steps__card__text .fa-padding--left {
     padding-left: 2rem;
   }
@@ -368,12 +368,12 @@ p {
 .guidelineSection__steps__card__text .fa-padding--right {
   padding-right: 2rem;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .guidelineSection__steps__card__text .fa-padding--right {
     padding-right: 0.8rem;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1024px) {
   .guidelineSection__steps__card__text .fa-padding--right {
     padding-right: 3rem;
   }
@@ -425,7 +425,7 @@ p {
     width: 48%;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1024px) {
   .restaurantSection__result a {
     width: 31%;
   }
@@ -472,7 +472,7 @@ p {
     margin-bottom: -100px;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1024px) {
   .menuSection {
     margin-bottom: -160px;
   }
@@ -492,12 +492,12 @@ p {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .menuSection__menu {
     top: -100px;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1024px) {
   .menuSection__menu {
     top: -160px;
   }
