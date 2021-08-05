@@ -1,1 +1,2 @@
-# JoanePouech_3_17032021
+## Projet 3 - Formation Développeur Web - OpenClassrooms
+## Dynamisez une page web avec des animations CSS
